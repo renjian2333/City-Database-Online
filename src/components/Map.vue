@@ -18,7 +18,7 @@ Bus.on('cityName',(value) => {
 })
 
 AMapLoader.load({
-    "key": "19973c1a7d3176d5d16bccfb2add4ff2",
+    "key": "yourkey",
     "version": "2.0",
     "plugins": [], 
 }).then((AMap) => {
