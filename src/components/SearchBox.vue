@@ -15,7 +15,7 @@ const onSearch = () => {
 const init = (input) => {
     Bus.emit('cityName', input);
     fetch(
-        "https://restapi.amap.com/v3/geocode/geo?key=bad0cfcf0596bd207315c7334988b85d&address=" +
+        "https://restapi.amap.com/v3/geocode/geo?key=yourkey&address=" +
         input
     )
         .then(function (response) {
