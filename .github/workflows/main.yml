@@ -8,12 +8,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo hello
-#       - name: setup npm
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: '14.X'
-#       - name: build app
-#         run: npm install
+      - name: setup npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14.X'
+      - name: 下载依赖
+        run: npm install
+      - name: build
+        run: npm run build
 #       - name: scp
 #         uses: appleboy/scp-action@v0.0.1
 #         with:
