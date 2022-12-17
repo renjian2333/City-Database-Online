@@ -16,11 +16,13 @@ jobs:
         run: npm install
       - name: build
         run: npm run build
-#       - name: scp
-#         uses: appleboy/scp-action@v0.0.1
-#         with:
-#           host: ${{ secrets.HOST }}
-#           username: root
-#           password: ${{ secrets.PASSWD }}
-#           port: 22
+      - name: scp
+        uses: appleboy/scp-action@v0.0.1
+        with:
+          host: ${{ secrets.HOST }}
+          username: root
+          password: ${{ secrets.PASSWD }}
+          port: 22
+          source: './dist/*'
+          target: ${{ secrets.TARGET }}
           
