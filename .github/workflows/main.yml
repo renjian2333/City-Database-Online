@@ -1,0 +1,24 @@
+name: deploy 
+on: 
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo hello
+#       - name: setup npm
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: '14.X'
+#       - name: build app
+#         run: npm install
+#       - name: scp
+#         uses: appleboy/scp-action@v0.0.1
+#         with:
+#           host: ${{ secrets.HOST }}
+#           username: root
+#           password: ${{ secrets.PASSWD }}
+#           port: 22
+          
