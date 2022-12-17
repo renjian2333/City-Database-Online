@@ -22,6 +22,7 @@ jobs:
           username: root
           password: ${{ secrets.PASSWD }}
           port: 22
-          source: './dist/*'
+          source: './dist/assets,./dist/favicon.ico,./dist/index.html'
           target: ${{ secrets.TARGET }}
+          overwrite: true
           
