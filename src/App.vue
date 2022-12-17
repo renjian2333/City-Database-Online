@@ -1,7 +1,7 @@
 <script setup>
 import SearchBox from './components/SearchBox.vue'
 import General from './components/General.vue'
-import Pictures from './components/Pictures.vue'
+// import Pictures from './components/Pictures.vue'
 import Map from './components/Map.vue'
 import Weather from './components/Weather.vue'
 import News from './components/News.vue'
@@ -19,7 +19,7 @@ import Attractions from './components/Attractions.vue'
   <main>
     <div class="left">
       <General />
-      <Pictures />
+      <!-- <Pictures /> -->
       <News />
     </div>
 
