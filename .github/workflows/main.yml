@@ -16,7 +16,7 @@ jobs:
       - name: build
         run: npm run build
       - name: scp
-        uses: appleboy/scp-action@v0.0.1
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: root
